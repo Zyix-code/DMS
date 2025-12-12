@@ -71,11 +71,6 @@ Program açıldığında otomatik sürüm kontrolü yapılacaktır.
 
 ---
 
-## 📸 Ekran Görüntüleri  
-*(Ekran görüntülerini gönderirsen modern galeri formatında ekleyebilirim.)*
-
----
-
 ## 🤝 İletişim  
 <p align="left">
   <a href="https://discordapp.com/users/481831692399673375"><img src="https://img.shields.io/badge/Discord-Zyix%231002-7289DA?logo=discord&style=flat-square"></a>
