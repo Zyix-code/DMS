@@ -1,73 +1,73 @@
-📘 DMS – Depo & Sipariş Yönetim Sistemi
-<p align="center"> <img src="https://media.giphy.com/media/Y4ak9Ki2GZCbJxAnJD/giphy.gif" width="150px"><br> </p> <p align="center"> <samp> Merhaba, ben Selçuk! 👋<br> Bu proje, depo ve sipariş süreçlerini daha hızlı, hatasız ve verimli yönetmek için geliştirilmiş profesyonel bir Windows masaüstü uygulamasıdır. <br> (.NET – C# WinForms) </samp> </p> <p align="center"> <a href="https://discordapp.com/users/481831692399673375"> <img src="https://img.shields.io/badge/Discord-Zyix%231002-7289DA?logo=discord&style=flat-square" alt="Discord"> </a> <a href="https://www.youtube.com/channel/UC7uBi3y2HOCLde5MYWECynQ?view_as=subscriber"> <img src="https://img.shields.io/badge/YouTube-Subscribe-red?logo=youtube&style=flat-square" alt="YouTube"> </a> <a href="https://www.reddit.com/user/_Zyix"> <img src="https://img.shields.io/badge/Reddit-Profile-orange?logo=reddit&style=flat-square" alt="Reddit"> </a> <a href="https://open.spotify.com/user/07288iyoa19459y599jutdex6"> <img src="https://img.shields.io/badge/Spotify-Follow-green?logo=spotify&style=flat-square" alt="Spotify"> </a> </p>
-🏭 DMS Nedir?
+📦 DMS – Depo & Sipariş Yönetim Sistemi
+<p align="center"> <img src="https://media.giphy.com/media/Y4ak9Ki2GZCbJxAnJD/giphy.gif" width="140px"> </p> <p align="center"> <b>.NET C# / WinForms üzerinde geliştirilmiş profesyonel depo & sipariş yönetim uygulaması.</b><br> Hızlı, güvenilir ve hatasız depo operasyonları için tasarlandı. </p>
+🚀 Özellikler
 
-DMS (Depo Management System), depo operasyonlarını dijitalleştirmek ve kolaylaştırmak amacıyla geliştirilmiş güçlü bir masaüstü uygulamasıdır.
-Kullanıcılar sipariş oluşturabilir, takibini yapabilir, ürün girişi/çıkışı yapabilir ve tüm hareketleri detaylı şekilde raporlayabilir.
+✔ Sipariş Yönetimi: Alıcı, firma, pazar yeri ve ürün bileşenleri ile detaylı kayıt
 
-⚙️ Öne Çıkan Özellikler
+✔ Depo Giriş–Çıkış: Ürün bazlı kontrol, hatalı/tekrarlı işleme engeli
 
-✔ Sipariş kaydı: Alıcı, firma, pazar yeri ve ürün bileşenlerini içeren detaylı sipariş yönetimi
-✔ Depo giriş/çıkış takibi
-✔ Ürün bazlı bağımsız giriş/çıkış kontrolü
-✔ Hatalı veya tekrar giriş/çıkış önlemesi
-✔ Sipariş – ürün hareketleri ilişkili yapısı
-✔ Log sistemi ile tüm işlemleri kayıt altına alma
-✔ E-posta bildirimi (EmailHelper ile)
-✔ Gerçek zamanlı bildirim (SoundHelper ile sesli uyarı + notify balloon)
-✔ SQL Server üzerinde çalışan güçlü database modeli
-✔ Yedekleme & CSV Dışa Aktarma
-✔ Versiyon kontrol sistemi (VersionChecker)
-✔ Zorunlu / opsiyonel güncelleme yönetimi
-✔ Güncelleme olduğunda web siteye yönlendirme
+✔ Gerçek Zamanlı Bildirim: Sesli uyarı + Windows bildirim balonu
 
-🧠 DMS Projesi Nasıl Çalışır?
-🔹 Sipariş Yönetimi
+✔ E-posta Gönderimi: Sipariş özeti, sistem bilgilendirmeleri
 
-Aynı sipariş numarası ile farklı alıcı / firma / pazar yeri girilmesi engellenir.
+✔ Log Sistemi: Tüm işlemler anlık olarak kayıt altında
 
-Sipariş bir kere oluşturulmuşsa tekrar eklenmez, ürün hareketi üzerinden ilerlenir.
+✔ VersionChecker: Zorunlu/opsiyonel güncelleme kontrolü
 
-🔹 Ürün Giriş–Çıkış Kontrolü
+✔ CSV dışa aktarma + yedekleme
 
-Her ürün satırı için ayrı giriş/çıkış kaydı tutulur.
+✔ SQL Server tabanlı güçlü veri modeli
 
-Bir ürün için çift giriş veya çift çıkış engellenir.
+<p align="center"> <img src="https://img.shields.io/badge/C%23-239120?logo=c-sharp&logoColor=white&style=flat-square"> <img src="https://img.shields.io/badge/.NET_Framework-512BD4?logo=dotnet&logoColor=white&style=flat-square"> <img src="https://img.shields.io/badge/WinForms-512BD4?logo=windows&style=flat-square"> <img src="https://img.shields.io/badge/MSSQL-CC2927?logo=microsoftsqlserver&logoColor=white&style=flat-square"> </p>
+🧠 Sistem Nasıl Çalışır?
+🔹 Sipariş Süreci
 
-Daha önce sadece “giriş” yapılmış ürün için “çıkış” yapılabilir.
+Aynı sipariş numarası tekrar oluşturulamaz.
 
-Hem giriş hem çıkış tamamlanmış bir ürün tekrar işlenemez.
+Sipariş oluşturulduktan sonra işlemler ürün hareketlerinden ilerler.
 
-🔹 Otomatik Bildirimler
+🔹 Ürün Giriş/Çıkış Kuralları
 
-Yeni sipariş → tüm bağlı kullanıcılara anlık bildirim
+Her satır ayrı bir işlem olarak işlenir.
 
-E-posta ile sipariş özeti gönderimi
+Çift giriş veya çift çıkış engellenir.
 
-Log sistemi tüm işlemleri arka planda kaydeder
+Giriş yapılmış ürüne çıkış yapılabilir; tamamlanan ürün tekrar işlenemez.
 
-🔹 VersionChecker – Güncelleme Sistemi
+🔹 Bildirim & Log
 
-Program açılışında otomatik olarak veritabanındaki en güncel versiyonu kontrol eder:
+Yeni siparişte anlık bildirim
 
-Versiyon küçük → güncelleme gerekli değil
+Sistem logları otomatik olarak tutulur
 
-Versiyon büyük → kullanıcıya bildirim
+🔹 Versiyon Kontrolü
 
-Zorunlu güncelleme → program kapanır, web sitesi açılır
+Program açılışında SQL üzerinden sürüm kontrolü
 
-Sürüm bilgileri SQL tablosundan alınır
+Yeni sürüm varsa bildirim → zorunluysa program kapanır ve web sitesi açılır
 
-🖼️ Ekran Görüntüleri (isteğe bağlı ekleyebilirim)
+🛠️ Kurulum
+1️⃣ Veritabanını Kurun
 
-✔ Giriş ekranı
-✔ Sipariş kayıt ekranı
-✔ Ürün bileşenleri yönetimi
-✔ Log ekranı
-✔ Versiyon kontrol popup'ı
-✔ Bildirim sistemi
+Uygulama MSSQL üzerinde çalışır.
+/Database klasöründeki DMS.sql dosyasını çalıştırarak veritabanını oluşturun.
 
-Ekran görüntülerini göndermek istersen README’ye gallery şeklinde ekleyebilirim.
+2️⃣ App.config Düzenleyin
 
-🛠️ Teknolojiler ve Araçlar
-<p align="center"> <img src="https://img.shields.io/badge/C%23-239120?logo=c-sharp&logoColor=white&style=flat-square"> <img src="https://img.shields.io/badge/.NET_Framework-512BD4?logo=dotnet&logoColor=white&style=flat-square"> <img src="https://img.shields.io/badge/WinForms-512BD4?logo=windows&style=flat-square"> <img src="https://img.shields.io/badge/MSSQL-CC2927?logo=microsoftsqlserver&logoColor=white&style=flat-square"> <img src="https://img.shields.io/badge/SMTP-Mail-orange?style=flat-square"> </p>
+SQL bağlantı bilginizi girin:
+
+<connectionStrings>
+    <add name="DMS" connectionString="Server=.;Database=DMS;Trusted_Connection=True;" providerName="System.Data.SqlClient" />
+</connectionStrings>
+
+3️⃣ Uygulamayı Çalıştırın
+
+Proje açılırken otomatik versiyon kontrolü yapılır.
+Güncelleme gerekiyorsa bildirim alırsınız.
+
+📸 Ekran Görüntüleri
+
+(İstersen ekran görüntülerini bana gönder — modern galeri şeklinde ekleyeyim!)
+
+🤝 İletişim
+<p align="left"> <a href="https://discordapp.com/users/481831692399673375"><img src="https://img.shields.io/badge/Discord-Zyix%231002-7289DA?logo=discord&style=flat-square"></a> <a href="https://www.youtube.com/channel/UC7uBi3y2HOCLde5MYWECynQ?view_as=subscriber"><img src="https://img.shields.io/badge/YouTube-Subscribe-red?logo=youtube&style=flat-square"></a> <a href="https://www.reddit.com/user/_Zyix"><img src="https://img.shields.io/badge/Reddit-Profile-orange?logo=reddit&style=flat-square"></a> <a href="https://open.spotify.com/user/07288iyoa19459y599jutdex6"><img src="https://img.shields.io/badge/Spotify-Follow-green?logo=spotify&style=flat-square"></a> </p>
