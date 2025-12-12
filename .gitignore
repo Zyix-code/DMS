@@ -1,0 +1,38 @@
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Build / Output
+bin/
+obj/
+out/
+dist/
+build/
+Release/
+Debug/
+
+# Executables
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Logs
+*.log
+
+# Packages
+*.zip
+*.tar
+*.rar
+
+# Python
+__pycache__/
+*.pyc
+
+# IDE
+.vscode/
+.idea/
+*.suo
+*.user
+*.cache
